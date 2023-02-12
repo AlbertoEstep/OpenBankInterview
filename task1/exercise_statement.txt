@@ -1,0 +1,12 @@
+You are writing a new service for your e-commerce site. Your task is to write a Spring Framework configuration class.
+
+The class that you nedd to create wil be called SystemConfig. All required classes have already been imported for you. You are working with the Spring Framework version 5.1.8 and Java8.
+
+Requirements:
+
+1. Make it a Spring Framework Java-based Container configuration class.
+2. Create a UsersRepository bean. It has a no args constructor. Additionaly, you should make sure that the method UsersRepository.initialize() is called right after construction of the bean.
+3. Create a LegacyPaymentsService bean. It has a no args constructor. It should be available under the name paymentsService.
+4. Enable auto-scanning for beans in the com.condility.utils package.
+5. The application contains another configuration class that has already bean prepared: MaintenanceConfig. However, it's not being picked up by the Spring Context. You should make sure its bean are also created by configuring the SystemConfig class appropriately.
+6. Ensure that properties defined in the production. 
